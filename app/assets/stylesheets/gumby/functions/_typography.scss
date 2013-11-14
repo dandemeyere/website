@@ -1,0 +1,13 @@
+// Typography mixins
+
+// Fonts in rems with px fallback
+
+@mixin font-size($size, $is-important: false) {
+  @if $is-important {
+    font-size: $size + px !important;
+    font-size: ($size / strip-units($base-font-size)) + rem !important;
+  } @else {
+    font-size: $size + px;
+    font-size: ($size / strip-units($base-font-size)) + rem;
+  }
+}

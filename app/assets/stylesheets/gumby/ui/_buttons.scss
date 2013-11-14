@@ -1,0 +1,100 @@
+/* Buttons */
+
+// Buttons
+@import "../functions/button-size";
+
+// Button structure
+.btn, .skiplink {
+  display: inline-block;
+  width: auto;
+  background: $default-color;
+  -webkit-appearance: none;
+  font-family: $font-family;
+  font-weight: $button-font-weight;
+  padding: 0 !important;
+  text-align: center;
+  .pretty & { @extend .pretty.btn; }
+  .metro & { @extend .metro.btn; }
+
+  > a, input, button {
+    display: block;
+    padding: 0 $default-button-padding;
+    color: $white;
+    height: 100%;
+  }
+
+  input, button {
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: 100%;
+    cursor: pointer;
+    font-weight: $type-font-weight;
+  }
+}
+
+// Button Shapes & Sizes
+.btn, .skiplink {
+  &.xlarge {
+    @include button-size(xlarge);
+  }
+  &.large {
+    @include button-size(large);
+  }
+  &.medium {
+    @include button-size(medium);
+    a {
+      padding: 0 ms(1);
+    }
+  }
+  &.small {
+    @include button-size(small);
+    a {
+      padding: 0 ms(-1);
+    }
+  }
+
+}
+
+// Button Colors & Styles
+.btn, .skiplink {
+  @each $shade in $ui-coloring {
+    &.#{nth($shade, 1)} {
+      background: nth($shade, 2);
+      border: 1px solid nth($shade, 2);
+      &:hover {
+        background: lighten(nth($shade, 2), 10%);
+      }
+      &:active {
+        background: darken(nth($shade, 2), 10%);
+      }
+      @if nth($shade, 1) == default {
+        color: darken(nth($shade, 2), 61.5%);
+        border: 1px solid nth($shade, 2);
+        &:hover {
+          border: 1px solid darken(nth($shade, 2), 5%);
+        }
+        a, input, button {
+          color: darken(nth($shade, 2), 61.5%);
+        }
+      }
+      @if nth($shade, 1) == warning {
+        color: darken(nth($shade, 2), 40%);
+        a, input, button {
+          color: darken(nth($shade, 2), 40%);
+        }
+      }
+    }
+  }
+
+  @each $style in $styling {
+    &.#{nth($style, 1)} {
+      &:hover {
+        @extend .btn.#{nth($style, 1)}
+      }
+      &:active {
+        @extend .btn.#{nth($style, 1)}
+      }
+    }
+  }
+}

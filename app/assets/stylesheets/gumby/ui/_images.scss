@@ -1,0 +1,18 @@
+.image {
+  line-height:0;
+  margin-bottom: 20px;
+  &.circle {
+    overflow: hidden;
+    width: auto;
+  }
+  &.rounded {
+    overflow: hidden;
+  }
+  &.photo {
+    border: 5px solid #fff;
+    &.polaroid {
+      padding-bottom: 50px;
+      background: #fff;
+    }
+  }
+}

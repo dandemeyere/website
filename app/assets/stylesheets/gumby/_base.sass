@@ -1,0 +1,31 @@
+body
+  background: $global-bg-color
+  font-family: $font-family
+  font-weight: $body-font-weight
+  color: $body-font-color
+  position: relative
+  -webkit-font-smoothing: $font-smoothing
+  @include respond(all-phones)
+    -webkit-text-size-adjust: none
+    -ms-text-size-adjust: none
+    width: 100%
+    min-width: 0
+
+html, body
+  height: 100%
+  margin: 0
+
+.hide
+  display: none
+
+.hide.active, .show
+  display: block
+
+.center-align
+  text-align: center
+
+.navbar .row
+  padding-top: 0.5em
+  a
+    color: $navbar-link-color
+    text-shadow: 0 1px 2px darken($navbar-color, 20%), 0 1px 0 darken($navbar-color, 20%)

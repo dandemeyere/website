@@ -1,0 +1,19 @@
+@include respond(portrait-tablets) {
+
+}
+@include respond(all-phones) {
+  body.pages-index .row.homepage center {
+    padding-top: 2em;
+    width: 80%;
+    font-size: 20px;
+  }
+  body.pages-index .row.homepage center a.header {
+    font-size: 32px;
+  }
+  .blank-header {
+    display: none;
+  }
+  .code-icon {
+    display: none;
+  }
+}
