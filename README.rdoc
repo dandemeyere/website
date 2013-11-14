@@ -5,10 +5,10 @@ A simple, DB-driven Rails website/blog.
 Things I want to do:
 
 * Blog feed
-** Controller + coverage
-** Caching
-** RSS feed
-** SEO for each post embedded into the layout
+  * Controller + coverage
+  * Caching
+  * RSS feed
+  * SEO for each post embedded into the layout
 * About page
 * Work page
 * Contact page
