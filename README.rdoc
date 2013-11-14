@@ -1,28 +1,16 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple, DB-driven Rails website/blog.
 
-Things you may want to cover:
+Things I want to do:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Blog feed
+** Controller + coverage
+** Caching
+** RSS feed
+** SEO for each post embedded into the layout
+* About page
+* Work page
+* Contact page
+* Alternate, non-homepage layout
+* Abstract all copy into en.yml so people can easily swap in/out their content.
