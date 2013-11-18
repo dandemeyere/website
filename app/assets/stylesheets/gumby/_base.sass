@@ -24,8 +24,25 @@ html, body
 .center-align
   text-align: center
 
-.navbar .row
-  padding-top: 0.5em
-  a
-    color: $navbar-link-color
-    text-shadow: 0 1px 2px darken($navbar-color, 20%), 0 1px 0 darken($navbar-color, 20%)
+.navbar
+  width: 100%
+  display: block
+  min-height: 40px
+  position: relative
+  border-top: 4px solid $navbar-color
+  padding-top: 10px
+
+  .columns
+    text-align: center
+    height: 42px
+    a
+      color: $navbar-color
+      font-size: 16px
+      line-height: 34px
+      -webkit-font-smoothing: $font-smoothing
+      text-rendering: optimizeLegibility
+
+.centered.eight.columns.border-top
+  border-top: 1px solid white
+.centered.eight.columns.border-bottom
+  border-bottom: 1px solid #dfe4ea

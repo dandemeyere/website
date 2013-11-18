@@ -14,23 +14,22 @@
 ActiveRecord::Schema.define(version: 20130308222100) do
 
   create_table "blog_posts", force: true do |t|
-    t.string   "type"
     t.string   "title"
     t.text     "body"
     t.text     "excerpt"
     t.string   "permalink"
-    t.boolean  "published",        default: false
+    t.boolean  "draft",            default: true
     t.datetime "published_at"
     t.string   "meta_keywords"
+    t.string   "meta_title"
     t.text     "meta_description"
-    t.string   "state",            default: "draft"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "blog_posts", ["draft"], name: "index_blog_posts_on_draft", using: :btree
   add_index "blog_posts", ["permalink"], name: "index_blog_posts_on_permalink", using: :btree
-  add_index "blog_posts", ["published"], name: "index_blog_posts_on_published", using: :btree
-  add_index "blog_posts", ["state"], name: "index_blog_posts_on_state", using: :btree
+  add_index "blog_posts", ["published_at"], name: "index_blog_posts_on_published_at", using: :btree
 
   create_table "messages", force: true do |t|
     t.string   "name"

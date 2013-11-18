@@ -1,0 +1,6 @@
+.row
+  .centered.eight.columns
+    - @posts.each do |post|
+      .row
+        %a{ href: "/blog/#{post.permalink}", title: post.title }
+          = post.title

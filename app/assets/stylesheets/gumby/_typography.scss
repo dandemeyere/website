@@ -10,34 +10,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @include respond(all-phones) {
-
   h1,h2,h3,h4,h5,h6 { word-wrap: break-word;}
-
 }
 
 h1 {
-  @include font-size($xxxlarge);
-  &.xlarge {
-    @include font-size($reallybig);
-  }
-  &.xxlarge {
-    @include font-size($tremendous);
-  }
-  &.absurd {
-    @include font-size($absurd);
-  }
-}
-h2 { @include font-size($xlarge); }
-h3 { @include font-size($larger);}
-h4 { @include font-size($large);}
-h5 { @include font-size($med);}
-h6 { @include font-size($norm);}
-
-@include respond(all-phones) {
-
-  h1 { @include font-size($xlarge);}
-  h2 { @include font-size($larger + 6);}
-
+  margin-top: 75px;
+  text-align: center;
+  letter-spacing: -.05em;
+  font: 400 italic 44px georgia, times new roman, serif;
 }
 
 .subhead {

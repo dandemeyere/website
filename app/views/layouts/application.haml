@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 %html
   %head
-    %title DAN DEMEYERE
+    %title= @content[:meta_title] || "Dan DeMeyere"
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
+    %link{ rel: "stylesheet", href: "//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic", type: "text/css" }
+    %meta{ "http-equiv" => "Content-Type", content: 'text/html; charset=utf-8' }
+    %meta{ name: "keywords", content: @content[:meta_keywords] }
+    %meta{ name: "description", content: @content[:meta_description] }
+
   %body{ class: "#{params[:controller]}-#{params[:action]}"}
     .navbar
       .row
-        .centered.eight.columns
+        .centered.six.columns
           .row
-            .three.columns
-              %a{ href: "/", title: 'Dan DeMeyere Blog' } BLOG
-            .three.columns
+            .one.column
+            .two.columns
+              %a{ href: "/blog", title: 'Dan DeMeyere\'s Blog' } BLOG
+            .two.columns
               %a{ href: "/", title: 'Dan DeMeyere Blog' } ABOUT
-            .three.columns
+            .two.columns
+              %center
+                %a{ href: "/", title: 'Home' }
+                  = image_tag "gray-code.png", alt: 'Dan DeMeyere Homepage', width:"25"
+            .two.columns
               %a{ href: "/", title: 'Dan DeMeyere Blog' } WORK
-            .three.columns
+            .two.columns
               %a{ href: "/", title: 'Dan DeMeyere Blog' } CONTACT
-        .centered.two.columns
+            .one.column
     = yield

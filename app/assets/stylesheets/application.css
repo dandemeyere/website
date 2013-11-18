@@ -11,4 +11,5 @@
  *= require_self
  *= require ./homepage
  *= require ./gumby/gumby
+ *= require ./blog_posts/show
  */

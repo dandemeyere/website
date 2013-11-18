@@ -1,0 +1,9 @@
+.row.main
+  .centered.eight.columns.border-bottom
+  .centered.eight.columns.border-top
+    %h1= @post.title
+    .row.published-at<>
+      %p<>
+        Published&nbsp;
+        = @post.published_at.datetime_prettify
+    != @post.body
