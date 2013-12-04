@@ -6,4 +6,30 @@
       %p<>
         Published&nbsp;
         = @post.published_at.datetime_prettify
-    != @post.body
+    != markup(@post.body)
+.row.footer
+  .centered.eight.columns
+    .row
+      %ul.two_up.tiles
+        %li
+          - if post = BlogPost.previous_post(@post).first
+            %a.next-post{ href: "/blog/#{post.permalink}", title: post.title } &larr; Previous Post
+          - else
+            &nbsp;
+        %li.align-right
+          - if post = BlogPost.next_post(@post).first
+            %a.next-post{ href: "/blog/#{post.permalink}", title: post.title } Next Post&rarr;
+    .row.bio
+      .two.columns
+        %center
+          %img.avatar{ src: 'http://gravatar.com/avatar/e8ce3d09518791c8db26b4f7364f4b71?s=80', alt: "Dan DeMeyere Avatar" }
+      .ten.columns
+        %p
+          I'm a developer living in San Francisco working at
+          %a.alternate{ href: 'http://www.thredup.com/team', target: '_blank', title: 'thredUP Team Page'} thredUP. 
+          Check out
+          %a.alternate{ href: 'http://www.dandemeyere.com/contact', target: '_blank', title: 'Contact Dan DeMeyere'} my contact page
+          or find me on Twitter if you'd like to get in touch.
+        .twitter
+          <a href="https://twitter.com/dandemeyere" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @dandemeyere</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>

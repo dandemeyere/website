@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require ./homepage
- *= require ./gumby/gumby
  *= require ./blog_posts/show
+ *= require ./blog_posts/index
+ *= require ./gumby/gumby
  */

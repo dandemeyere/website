@@ -1,6 +1,11 @@
-.row
+.featured-image
+.row.padding-bottom
   .centered.eight.columns
     - @posts.each do |post|
       .row
-        %a{ href: "/blog/#{post.permalink}", title: post.title }
-          = post.title
+        .eight.columns
+          %p
+            %a{ href: "/blog/#{post.permalink}", title: post.title }= post.title.elipse(42)
+        .four.columns.right-align
+          %p= post.published_at.datetime_prettify
+

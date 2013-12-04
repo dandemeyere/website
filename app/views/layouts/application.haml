@@ -9,18 +9,19 @@
     %meta{ "http-equiv" => "Content-Type", content: 'text/html; charset=utf-8' }
     %meta{ name: "keywords", content: @content[:meta_keywords] }
     %meta{ name: "description", content: @content[:meta_description] }
-
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no' }
   %body{ class: "#{params[:controller]}-#{params[:action]}"}
     .navbar
+      %a.mobile.nav-drawer.icon{ rel: 'nofollow', href: '' } ☰
       .row
         .centered.six.columns
           .row
             .one.column
             .two.columns
-              %a{ href: "/blog", title: 'Dan DeMeyere\'s Blog' } BLOG
+              %a{ href: "/blog", title: 'Blog' } BLOG
             .two.columns
-              %a{ href: "/", title: 'Dan DeMeyere Blog' } ABOUT
-            .two.columns
+              %a{ href: "/about", title: 'Brief Bio' } ABOUT
+            .two.columns.home-link
               %center
                 %a{ href: "/", title: 'Home' }
                   = image_tag "gray-code.png", alt: 'Dan DeMeyere Homepage', width:"25"

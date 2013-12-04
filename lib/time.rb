@@ -1,7 +1,7 @@
 class Time
   def datetime_prettify
     month = self.strftime("%B")
-    day = self.strftime("%-d")
+    day = self.strftime("%d").to_i
     year = self.strftime("%Y")
 
     if [1, 21, 31].include?(day)

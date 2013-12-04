@@ -1,9 +1,10 @@
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: $font-family;
-  font-weight: $header-font-weight;
+  font-family: georgia, times new roman, serif;
+  font-weight: 400;
   color: $header-font-color;
   text-rendering: optimizeLegibility;
+  font-style: italic;
   a {
     color: $header-link-color;
   }
@@ -16,8 +17,14 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
   margin-top: 75px;
   text-align: center;
+  font-size: 44px;
   letter-spacing: -.05em;
-  font: 400 italic 44px georgia, times new roman, serif;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 0px;
 }
 
 .subhead {
@@ -49,6 +56,11 @@ a {
   line-height: inherit;
   &:hover {
     color: $body-link-hover-color;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 }
 
@@ -58,26 +70,26 @@ a {
   
  ======================================================*/
 ul {
-  list-style: none outside;
+  list-style: disc outside;
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Crimson Text', 'Hoefler Text', Georgia, serif;
+  strong {
+    line-height: 20px;
+  }
 }
 
 ol {
   list-style: decimal;
-  margin-left: 30px;
+  margin-left: 0px;
 }
 
 ul {
-  &.square, &.circle, &.disc {
-    margin-left: 25px;
-  }
   &.square {
     list-style: square outside;
   }
   &.circle {
     list-style: circle outside;
-  }
-  &.disc {
-    list-style: disc outside;
   }
   ul {
     margin: 4px 0 5px 25px;
@@ -124,14 +136,16 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
   color: #777;
 }
 
+iframe {
+  margin-top: 20px;
+}
+
 /*  Blockquotes  */
 
 blockquote {
-  line-height: 20px;
-  color: #777;
+  line-height: 26px;
   p {
-    line-height: 20px;
-    color: #777;
+    line-height: 26px;
   }
   margin: 0 0 18px;
   padding: 9px 20px 0 19px;

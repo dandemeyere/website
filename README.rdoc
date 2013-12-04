@@ -5,12 +5,14 @@ A simple, DB-driven Rails website/blog.
 Things I want to do:
 
 * Blog feed
+  * Make images look better for blog_posts#show
   * Controller + coverage
   * Caching
   * RSS feed
-  * SEO for each post embedded into the layout
+* SEO-up all non-blog pages
 * About page
 * Work page
 * Contact page
-* Alternate, non-homepage layout
+* Re-do mobile nav the way I wanted it originally
 * Abstract all copy into en.yml so people can easily swap in/out their content.
+* Clean up .scss/.sass from Gumby

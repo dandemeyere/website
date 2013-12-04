@@ -31,7 +31,14 @@ html, body
   position: relative
   border-top: 4px solid $navbar-color
   padding-top: 10px
-
+  .mobile.nav-drawer.icon
+    display: none
+    position: absolute
+    right: 15px
+    bottom: 6px
+    line-height: 26px
+    font-size: 1.75em
+    color: white
   .columns
     text-align: center
     height: 42px
@@ -41,8 +48,23 @@ html, body
       line-height: 34px
       -webkit-font-smoothing: $font-smoothing
       text-rendering: optimizeLegibility
+      &:hover
+        color: $body-link-color
+
+  &.expanded
+    min-height: 180px
+    .row
+      display: block
+      .columns
+        &.home-link
+          display: none
+        a
+          color: white
 
 .centered.eight.columns.border-top
   border-top: 1px solid white
 .centered.eight.columns.border-bottom
   border-bottom: 1px solid #dfe4ea
+
+.gist-meta
+  display: none
