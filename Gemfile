@@ -6,9 +6,9 @@ gem 'mysql2'
 gem "haml"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-gem 'coffee-rails'
 
 group :assets do
+  gem 'coffee-rails'
   gem 'uglifier', '>= 1.0.3'
 end
 
