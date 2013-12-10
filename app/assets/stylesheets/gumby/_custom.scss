@@ -2,7 +2,7 @@
 
 }
 @include respond(all-phones) {
-  body.blog_posts-index .row, body.blog_posts-show .row {
+  body.blog_posts-index .row, body.blog_posts-show .row, body.pages-about .row {
     width: 91%;
     padding: 0 4.5% 0 4.5%;
   }
@@ -16,7 +16,7 @@
       font-size: 32px;
     }
   }
-  body.blog_posts-show {
+  body.blog_posts-show, body.pages-about {
     .row.main p, .row.main ul li {
       line-height: 23px;
       font-size: 16px;
