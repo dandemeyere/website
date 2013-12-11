@@ -69,6 +69,13 @@ Website::Application.configure do
   # the I18n.default_locale when a translation can not be found).
   config.i18n.fallbacks = true
 
+  config.action_mailer.smtp_settings = {
+    :address   => "smtp.mandrillapp.com",
+    :port      => 25,
+    :user_name => YAML::load(File.open('config/settings.yml'))["settings"]["email"],
+    :password  => YAML::load(File.open('config/settings.yml'))["settings"]["mandrill_password"]
+  }
+
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
 

@@ -1,0 +1,95 @@
+form {
+  position: relative;
+  padding: 15px;
+  margin: 0 0 18px;
+  label {
+    display: block;
+    font-size: $base-font-size;
+    cursor: pointer;
+    margin-bottom: 9px;
+    &.inline {
+      display: inline-block;
+      padding-right: 20px;
+    }
+  }
+  dt {
+    margin: 0;
+  }
+  textarea {
+    height: 150px;
+    margin-bottom: 0px;
+  }
+  ul, ul li {
+    margin-left: 0;
+    list-style-type: none;
+  }
+  fieldset {
+    border-color: darken($default-color, 10%);
+    margin: 18px 0;
+    legend {
+      padding: 5px 10px;
+    }
+  }
+}
+
+.field {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  // Font-size 16px for weird form style error
+  font-size: 16px;
+  overflow: hidden;
+  input, input[type="*"], textarea {
+    max-width: 100%;
+    width: 99%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    resize: none;
+    -webkit-appearance: none;
+    font-family: $font-family;
+    font-weight: $font-weight-light;
+    font-size: $base-font-size;
+  }
+  .input {
+    position: relative;
+    padding: 8px 0px 8px;
+    text-indent: 10px;
+    background: #fff;
+    border: 1px solid darken($default-color, 10%);
+    font-size: $base-font-size;
+    border-radius: 4px;
+    -moz-box-shadow: 0 0 0 #000,inset 0px 3px 3px #eee;
+    -webkit-box-shadow: 0 0 0 #000,inset 0px 3px 3px #eee;
+    box-shadow: 0 0 0 #000,inset 0px 3px 3px #eee;
+  }
+  .input.textarea {
+    height: auto;
+    min-height: 100px;
+  }
+}
+
+input, .input {
+  @each $width in $field-sizes {
+    &.#{nth($width, 1)} {
+      margin:0;
+      &:last-child {
+        margin-left: -4px;
+      }
+      &:first-child {
+        margin-right: 3.94%;
+        margin-left: 0;
+      }
+      &:first-child:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+.field .text input[type="search"] {
+  -webkit-appearance: textfield;
+}

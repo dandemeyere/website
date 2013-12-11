@@ -11,3 +11,4 @@
 /tmp
 config/deploy.rb
 .rvmrc
+config/settings.yml

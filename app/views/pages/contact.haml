@@ -1,4 +1,18 @@
 .row.main
   .centered.eight.columns.border-bottom
   .centered.eight.columns.border-top
-  %h1 Coming soon!
+    %h1 Contact Me
+    - flash.each do |name, msg|
+      = content_tag :p, msg, class: name
+    = form_for Message.new do |f|
+      .row
+        .field
+          = f.text_field :name, class: "input", placeholder: "Name"
+      .row
+        .field
+          = f.text_field :email, class: "input", placeholder: "Email"
+      .row
+        .field
+          = f.text_area :message, class: "input textarea", placeholder: "Please leave your message here"
+      .row
+        = f.submit "Send", class: 'btn'
