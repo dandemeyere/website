@@ -1,12 +1,17 @@
-.row.main
+.row.main{ itemscope: "", itemtype: "http://schema.org/Article" }
+  .hide{ itemprop: "description", content: @content[:meta_description] }
+  .hide{ itemprop: "url", content: "http://www.dandemeyere.com/blog/#{@post.permalink}" }
+  .hide{ itemprop: "author", content: "Dan DeMeyere" }
   .centered.eight.columns.border-bottom
   .centered.eight.columns.border-top
-    %h1= @post.title
+    %h1{ itemprop: "name" }= @post.title
     .row.published-at<>
       %p<>
         Published&nbsp;
+        %span{ itemprop: "datePublished", content: @post.published_at.strftime("%Y-%m-%d") }
         = @post.published_at.datetime_prettify
-    != markup(@post.body)
+    %div{ itemprop: 'articleBody' }
+      != markup(@post.body)
 .row.footer
   .centered.eight.columns
     .row
