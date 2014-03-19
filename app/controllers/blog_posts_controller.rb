@@ -5,7 +5,7 @@ class BlogPostsController < ApplicationController
   end
 
   def show
-    @post = BlogPost.find_by_permalink(params[:permalink])
+    @post = BlogPost.find_by_permalink(params[:permalink]) || BlogPost.find_by_id(params[:permalink])
     @content[:meta_title] = @post.meta_title
     @content[:meta_keywords] = @post.meta_keywords
     @content[:meta_description] = @post.meta_description
