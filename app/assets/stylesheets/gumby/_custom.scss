@@ -6,6 +6,9 @@
     width: 91%;
     padding: 0 4.5% 0 4.5%;
   }
+  a.next-post {
+    font-size: 80%;
+  }
   body.pages-index {
     .row.homepage center {
       padding-top: 2em;
@@ -19,7 +22,7 @@
   body.blog_posts-show, body.pages-about {
     .row.main p, .row.main ul li {
       line-height: 23px;
-      font-size: 16px;
+      font-size: 18px;
     }
     img.avatar {
       display: none;
@@ -62,6 +65,9 @@
     }
     .website.name.mobile {
       display: block;
+    }
+    .columns.two {
+      max-width: inherit;
     }
   }
   .centered.eight.columns.border-top, .centered.eight.columns.border-bottom {

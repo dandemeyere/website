@@ -18,12 +18,16 @@
       %ul.two_up.tiles
         %li
           - if post = BlogPost.previous_post(@post).first
-            %a.next-post{ href: "/blog/#{post.permalink}", title: post.title } &larr; Previous Post
+            %a.next-post{ href: "/blog/#{post.permalink}", title: post.title }
+              %span.left &larr;
+              Previous Post
           - else
             &nbsp;
         %li.align-right
           - if post = BlogPost.next_post(@post).first
-            %a.next-post{ href: "/blog/#{post.permalink}", title: post.title } Next Post&rarr;
+            %a.next-post{ href: "/blog/#{post.permalink}", title: post.title }
+              Next Post
+              %span &rarr;
     .row.bio
       .two.columns
         %center
