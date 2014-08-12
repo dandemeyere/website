@@ -11,6 +11,7 @@
     %meta{ name: "description", content: @content[:meta_description] }
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no' }
     %link{ rel:"icon", type: "image/png", href: asset_path("gray-code.png") }
+    %link{ href: "//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", rel: "stylesheet" }
   %body{ class: "#{params[:controller]}-#{params[:action]}"}
     .navbar
       %a.mobile.nav-drawer.icon{ rel: 'nofollow', href: '' } ☰

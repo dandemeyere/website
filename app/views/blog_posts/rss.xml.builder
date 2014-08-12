@@ -2,9 +2,9 @@ xml.instruct! :xml, :version => "1.0"
 
 xml.rss :version => "2.0" do
   xml.channel do
-    xml.title       "www.dandemeyere.com"
-    xml.description "A Developer's Journey Blog Posts"
-    xml.link        "http://www.dandemeyere.com/blog/rss.xml"
+    xml.title       "Dan DeMeyere"
+    xml.description "I'm Dan DeMeyere. Director of Engineering at thredUP. Casual blogger, Tottenham Hotspur fan, maker of breakfast sandwiches, Michigan State spartan."
+    xml.link        "http://www.dandemeyere.com"
 
     @posts.each do |post|
       xml.item do

@@ -4,7 +4,7 @@
 @import "../functions/button-size";
 
 // Button structure
-input.btn, {
+input.btn, div.btn {
   -webkit-appearance: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
