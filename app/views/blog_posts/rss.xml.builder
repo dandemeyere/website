@@ -10,7 +10,7 @@ xml.rss :version => "2.0" do
       xml.item do
         xml.title       post.title
         xml.link        "/blog/#{post.permalink}"
-        xml.description post.meta_description
+        xml.description markup(post.body)
         xml.guid        "/blog/#{post.permalink}"
         xml.pubDate     post.published_at.strftime('%a, %d %b %Y %I:%M:%S %z')
         xml.content     markup(post.body)
