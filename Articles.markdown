@@ -21,5 +21,12 @@
 * [Technical Debt and Grandma's Envelope](http://www.ontechnicaldebt.com/blog/tech-debt-leverage-and-grandmas-envelope/)
 * [Speed in Software Development](http://www.targetprocess.com/articles/speed-in-software-development.html)
 * [Why Style Guides Are Important](https://github.com/airbnb/javascript/issues/102)
-* [Github's Ruby Style Guide](https://github.com/styleguide/ruby)
 * [Airbnb's take on Engineering Culture](http://nerds.airbnb.com/engineering-culture-airbnb/)
+
+### Style Guides
+* [Github's Ruby Style Guide](https://github.com/styleguide/ruby)
+* [&yet's Jade & Stylus Style Guide](http://yetiguide.com/)
+* 
+
+### Misc
+* [Beautiful Example of How to Document your UI/UX Kit](http://ux.mailchimp.com/patterns/)
