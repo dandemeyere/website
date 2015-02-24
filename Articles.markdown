@@ -1,7 +1,8 @@
 # Technical Articles
 
 ### Front-end
-* [Improving performance with critical path rendering by Google](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/) 
+* [Improving performance with critical path rendering by Google](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/)
+* [Writing maintainable front-end systems](http://blog.andyet.com/2015/01/21/on-maintainable-front-end-systems)
 
 ### Database
 * [Efficient database insertions within Rails](https://www.coffeepowered.net/2009/01/23/mass-inserting-data-in-rails-without-killing-your-performance/)
