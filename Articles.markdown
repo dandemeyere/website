@@ -3,6 +3,7 @@
 ### Front-end
 * [Improving performance with critical path rendering by Google](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/)
 * [Writing maintainable front-end systems](http://blog.andyet.com/2015/01/21/on-maintainable-front-end-systems)
+* [How to implement a visual CSS testing framework](https://bugsnag.com/blog/implementing-a-visual-css-testing-framework)
 
 ### React / Flux
 * [Getting started with React](http://ryanclark.me/getting-started-with-react/)
