@@ -9,6 +9,9 @@
 * [Getting started with React](http://ryanclark.me/getting-started-with-react/)
 * [Getting started with Flux](http://ryanclark.me/getting-started-with-flux/)
 
+### Back-end
+* [Large scale payments systems with Rails](http://nerds.airbnb.com/large-scale-payments-systems-ruby-rails/)
+
 ### Database
 * [Efficient database insertions within Rails](https://www.coffeepowered.net/2009/01/23/mass-inserting-data-in-rails-without-killing-your-performance/)
 * [An under-the-hood look at Active Record](http://patshaughnessy.net/2014/9/17/20000-leagues-under-activerecord)
