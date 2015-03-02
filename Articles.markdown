@@ -9,8 +9,8 @@
 ### React / Flux
 * [Facebook - Intro to Flux + F8 Flux/React Video](http://facebook.github.io/flux/docs/overview.html)
 * [Github - Flux Unidirectional Flor Diagram](https://github.com/facebook/flux/blob/master/docs/img/flux-diagram-white-background.png)
-* [Basic React Tutorial](http://ryanclark.me/getting-started-with-react/)
-* [Chat-based Flux Tutorial](http://ryanclark.me/getting-started-with-flux/)
+* [Ryan Clarke - Basic React Tutorial](http://ryanclark.me/getting-started-with-react/)
+* [Ryan Clarke - Chat-based Flux Tutorial](http://ryanclark.me/getting-started-with-flux/)
 
 ### Back-end
 * [Airbnb - Large scale payments systems with Rails](http://nerds.airbnb.com/large-scale-payments-systems-ruby-rails/)
