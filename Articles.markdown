@@ -22,6 +22,7 @@
 * [An under-the-hood look at Active Record](http://patshaughnessy.net/2014/9/17/20000-leagues-under-activerecord)
 
 ### Scaling
+* [Nginx - Best Architectual Practices for using Microservices at Netflix](http://nginx.com/blog/microservices-at-netflix-architectural-best-practices/)
 * [Github - Making MySQL Better](https://github.com/blog/1880-making-mysql-better-at-github)
 * [LivingSocial - Caching in Service Oriented Architecture](https://techblog.livingsocial.com/blog/2014/08/06/soa-series-part-4-caching-service-responses-client-side/)
 * [Stripe - Game day exercises](https://stripe.com/blog/game-day-exercises-at-stripe)
