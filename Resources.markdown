@@ -13,6 +13,7 @@
 * [Andrew Ray - Flux for Dummies](http://blog.andrewray.me/flux-for-stupid-people/)
 * [Ryan Clarke - Basic React Tutorial](http://ryanclark.me/getting-started-with-react/)
 * [Ryan Clarke - Chat-based Flux Tutorial](http://ryanclark.me/getting-started-with-flux/)
+* [React Terminology](https://gist.github.com/sebmarkbage/fcb1b6ab493b0c77d589#file-react-terminology-md)
 
 ### Back-end
 * [Airbnb - Large scale payments systems with Rails](http://nerds.airbnb.com/large-scale-payments-systems-ruby-rails/)
