@@ -44,3 +44,7 @@
 
 ### Misc
 * [Mailchinp - Beautiful Example of How to Document your UI/UX Kit](http://ux.mailchimp.com/patterns/)
+
+# Books
+
+* [The Pragmatic Programmer](https://pragprog.com/the-pragmatic-programmer)
