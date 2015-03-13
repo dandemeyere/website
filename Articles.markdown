@@ -30,16 +30,16 @@
 ### Data
 * [Asana's Data Infrastructure](https://eng.asana.com/2014/11/stable-accessible-data-infrastructure-startup/)
 
-### Engineering Team Culture/Processes
+### Engineering Team Culture, Processes, and Leadership
 * [Technical Debt and Grandma's Envelope](http://www.ontechnicaldebt.com/blog/tech-debt-leverage-and-grandmas-envelope/)
 * [Speed in Software Development](http://www.targetprocess.com/articles/speed-in-software-development.html)
-* [Airbnb - Why Style Guides Are Important](https://github.com/airbnb/javascript/issues/102)
+* [Fog Creek Softwre - Becoming a Tech Lead](http://blog.fogcreek.com/becoming-a-tech-lead-interview-with-pat-kua/)
 * [Airbnb - Engineering Culture](http://nerds.airbnb.com/engineering-culture-airbnb/)
 
 ### Style Guides
+* [Airbnb - Why Style Guides Are Important](https://github.com/airbnb/javascript/issues/102)
 * [Github - Ruby Style Guide](https://github.com/styleguide/ruby)
 * [&Yet - Jade & Stylus Style Guide](http://yetiguide.com/)
-* 
 
 ### Misc
 * [Mailchinp - Beautiful Example of How to Document your UI/UX Kit](http://ux.mailchimp.com/patterns/)
