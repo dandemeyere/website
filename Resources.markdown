@@ -11,6 +11,7 @@
 * [Github - Flux Unidirectional Flor Diagram](https://github.com/facebook/flux/blob/master/docs/img/flux-diagram-white-background.png)
 * [Andrew Ray - React for Dummies](http://blog.andrewray.me/reactjs-for-stupid-people/)
 * [Andrew Ray - Flux for Dummies](http://blog.andrewray.me/flux-for-stupid-people/)
+* [Zapier Engineering - Intro to React with Tutorial and Gotchas](https://zapier.com/engineering/react-js-tutorial-guide-gotchas/)
 * [Ryan Clarke - Basic React Tutorial](http://ryanclark.me/getting-started-with-react/)
 * [Ryan Clarke - Chat-based Flux Tutorial](http://ryanclark.me/getting-started-with-flux/)
 * [React Terminology](https://gist.github.com/sebmarkbage/fcb1b6ab493b0c77d589#file-react-terminology-md)
