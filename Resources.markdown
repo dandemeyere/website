@@ -14,6 +14,7 @@
 * [Zapier Engineering - Intro to React with Tutorial and Gotchas](https://zapier.com/engineering/react-js-tutorial-guide-gotchas/)
 * [Ryan Clarke - Basic React Tutorial](http://ryanclark.me/getting-started-with-react/)
 * [Ryan Clarke - Chat-based Flux Tutorial](http://ryanclark.me/getting-started-with-flux/)
+* [Tilt Engineering - Roll your own A/B Tests with Optimizely and React](http://engineering.tilt.com/roll-your-own-ab-tests-with-optimizely-and-react/)
 * [React Terminology](https://gist.github.com/sebmarkbage/fcb1b6ab493b0c77d589#file-react-terminology-md)
 
 ### Back-end
