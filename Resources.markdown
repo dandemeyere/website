@@ -52,3 +52,6 @@
 # Books
 
 * [The Pragmatic Programmer](https://pragprog.com/the-pragmatic-programmer)
+
+# Random dev files
+* [My custom zsh profile theme](https://gist.github.com/dandemeyere/de41f0bb5e4065dc25c5)
