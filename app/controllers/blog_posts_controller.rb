@@ -2,9 +2,11 @@ class BlogPostsController < ApplicationController
   before_filter :pull_default_content, only: [:index, :rss]
 
   def index
+    redirect_to "https://medium.com/@dandemeyere" and return
   end
 
   def show
+    redirect_to "https://medium.com/@dandemeyere" and return
     @post = BlogPost.find_by_permalink(params[:permalink]) || BlogPost.find_by_id(params[:permalink])
     @content[:meta_title] = @post.meta_title
     @content[:meta_keywords] = @post.meta_keywords
